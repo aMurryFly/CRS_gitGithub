@@ -1,13 +1,4 @@
-# CRS_gitGithub
-Curso enfocado al manejo básico de git y github 
+# Curso de git  y Github
 
-Comandos básicos:
-
-git add 
-    commit 
-    status
-
-config
-
-    push 
+Las carecterísticas del proyecto final de este curso se publicarán después en este mismo archivo en la rama Master.
     
