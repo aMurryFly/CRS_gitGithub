@@ -1,0 +1,34 @@
+Tema: Proyecto Final HTML, CSS & JS
+Nombre: Ruiz Villalba Valentina Fabienne
+Fecha: 22/06/19
+
+
+
+
+---> Herramientas de uso general <---
+
+https://www.w3schools.com/cssref/sel_hover.asp
+
+https://www.iloveimg.com
+
+--> HOVER <--
+
+https://www.w3schools.com/howto/howto_css_transition_hover.asp
+
+
+--> INFO TIENDA <--
+
+https://www.litos.net/tienda/
+
+
+--> VIDEO FORMULARIO <--
+
+Online Tutorials. (2017). Transparent Login Form with floating Placeholder Text - Pure CSS Label Slide Up on Focus - No jQuery [Image]. Retrieved from https://www.youtube.com/watch?v=UJvL4i6UPbY
+
+
+NOTA: 
+En el documento 4 hay una parte con comentario. Con el video del formulario logré hacer que si no llena un campo no se puede enviar la indo, te muestra un mensaje de que llenes el campo. Sin embargo, también hice que apareciera un mensaje de información enviada cada vez que le diera click en el boton "enviar" pero el mensaje se enviaba aun cuando no se habían llenado todos los campos. Al final decidí dejarlo comentado para que sirviera lo primero que intente. De igual forma sirve si lo descomentas jeje.
+
+
+Gracias :D 
+
