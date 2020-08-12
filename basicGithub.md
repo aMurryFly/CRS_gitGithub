@@ -1,3 +1,14 @@
+Conceptos importantes para el manejo de github:
+
+Repositorio en línea: Es el repositorio que está guardado en el servidor de github.
+
+Repositorio local: Es una copia del servidor en línea dentro de nuestro ordenador.
+
+Repositorio remoto: Se trata del repositorio en líea de un tercero al cual hicimos un fork.
+
+Fork: Crear una copia del repositorio en línea de otro perfil en nuestro perfil de github. Desde este repositorio, podemos colaborar y sugerir cambios en el repositorio original.
+
+Pull request: Se trata de una solicitud de incluir cambios en el repositorio de un tercero realizados en un repositorio en línea surgido a partir de realizarle un fork.
 
 
 Proceso para actualizar nuestro repositorio remoto una vez hecho el Fork de algún otro compañero:
