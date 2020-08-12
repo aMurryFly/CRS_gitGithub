@@ -4,7 +4,7 @@
 
 *Éste ha sido creado con la finalidad de plasmar los conocimientos adquiridos en el curso de manejo de Git/Git-Hub por parte del Taller de Robótica Abierta, para el buen manejo de estas dos grandes herramientas, orientada a la realizacion de proyectos multidiciplinarios, y el buen manejo de estos.*
 
-**Lista de Comandos**
+## Lista de Comandos
 
 * Status
 
