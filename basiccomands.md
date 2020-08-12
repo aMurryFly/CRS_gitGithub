@@ -1,4 +1,4 @@
-# :boom: Comando Básicos para el manejo de Git/Git-Hub :boom:
+#:boom: Comando Básicos para el manejo de Git/Git-Hub :boom:
 
 ##Acerca del documento :pint_up:
 
