@@ -9,40 +9,47 @@
 * Add
 
 Este comando agrega un archivo al repositorio y lo prepara para un commit
+
 `$git add <nombre del archivo>`
 
 
 * Commit
 
 Crea un commit con la opción de agreagar un mensaje
+
 `$git commit -m "Descripción del commit hecho"`
 
 * Checkout 
 
 Comando utilizado para cambiar de rama
+
 `$git checkout <nombre de la rama>`
 
 * Push
 
 Actualiza cambios desde el repositorio local al mismo repositorio remoto
+
 `$git push`
 
 
 * Pull
 
 Incorpora cambios de un repositorio remoto en la rama actual 
+
 `$git pull`
 
 
 * Clone 
 
 Clona un repositorio dentro de un directorio previamente creado
+
 `$git clone <URL del repositorio a clonar>`
 
 
 * Branch 
 
 Comando utilizado para listar, crear o eliminar ramas 
+
 `$git branch`
 
 
