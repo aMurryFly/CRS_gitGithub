@@ -1,10 +1,10 @@
-#:boom: Comando Básicos para el manejo de Git/Git-Hub :boom:
+# :boom: Comando Básicos para el manejo de Git/Git-Hub :boom:
 
 ## Acerca del documento :pint_up:
 
 *Éste ha sido creado con la finalidad de plasmar los conocimientos adquiridos en el curso de manejo de Git/Git-Hub por parte del Taller de Robótica Abierta, para el buen manejo de estas dos grandes herramientas, orientada a la realizacion de proyectos multidiciplinarios, y el buen manejo de estos.*
 
-** Lista de Comandos **
+**Lista de Comandos**
 
 * Status
 
@@ -72,7 +72,7 @@ $git remote add --track "rama_a_la_que_deseo_asociar_los_cambios" "Alias_que_que
 
 Para entenderlo mejor pondremos un ejemplo concreto, supongamos que nos interesa hacer un fork de un repositorio especifico, posteriormente al tenerlo en nuestro repositorio y hacer una copia de manera local al creador o propietario del repositorio se le ocurre subir algunos cambios, al nosotros estar interesados en tener esos cambios debemos decirle a git que se trata de un repositorio remoto, y no de un repositorio propio.
 
-ejemplo:
+Ejemplo:
 
 $git remote add --track master Axel https://github.com/AxelRojas/ejercicioJueves.git
 
