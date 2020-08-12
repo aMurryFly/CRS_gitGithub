@@ -1,0 +1,213 @@
+/*Proyecto final HTML, CSS & JS
+
+Nombre: Ruiz Villalba Valentina Fabienne
+
+Fecha de entrega: 22/06/19*/
+
+
+/*-------------------------------------------------
+				ESTILO DOCUMENTO 2 / TIENDA
+-------------------------------------------------
+*/
+
+
+body{
+	background-color: #58b368;
+	font-family: 'Nunito', sans-serif;
+}
+
+
+/*Parte de la navegación*/
+
+#navigation{
+	display: inline-block;
+	color: #2e282a;
+	background-color: transparent;
+	width: 90%;
+	margin: auto;
+	margin-left: 30px;
+	border-radius: 4px;
+	text-align: center;
+	padding-right: 40px;
+	padding-left: 40;
+}
+
+#navigation > a{
+	font-weight: bold;
+	color: #2e282a;
+}
+
+.ref_doc{
+	text-decoration: none;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*transition*/
+
+.ref_doc{
+	padding: 5px 5px 5px 5px;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+.ref_doc:hover{
+	opacity: 1;
+}
+
+/*------------------------------------------------------------------------*/
+
+
+/*Título del artículo*/
+
+#header{
+	padding: 10px 15px 10px 15px;
+}
+
+#header > .description{
+	text-align: right;
+	color: #841818;
+}
+
+.title > .enchanted{
+	/*font-family: 'IM Fell French Canon SC', serif;*/
+    font-family: 'Nunito', sans-serif;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.enchanted > .colorDif{
+	color: #9c2c2c;
+
+}
+
+.title > .colorDif{
+	color: #9c2c2c
+}
+
+.title{
+	font-family: 'Nunito', sans-serif;
+    font-family: 'MedievalSharp', cursive;
+	font-size: 50px;
+	color: #681313;
+}
+
+#title_proy{
+	display: inline-block;
+	margin-right: 450px;
+	text-align: left;
+}
+
+/*---------------------------------------------------------------*/
+
+/*"caja" color vede azulado*/
+
+.conteiner{
+	border-radius: 4px;
+	background-color: #009975;
+	width: auto;
+	margin-top: 25px;
+	margin-left: 130px;
+	margin-right: 130px;
+	text-align: justify;
+	margin-bottom: 10px;
+	padding: 10px 10px 10px;
+}
+/*---------------------------------------------------------------*/
+
+/*Información principal*/
+
+#main_info{
+	border-radius: 2px;
+	/*background-color: #d9d872;*/
+	background-color: transparent;
+	width: auto;
+	margin: auto;
+	margin-left: 90px;
+	margin-right: 90px;
+	padding: 10px 25px 20px 25px;
+}
+
+
+table{
+	border: 3px solid #01676b;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+	width: auto;
+}
+
+#titleTable{
+	color: #681313;
+	font-weight: bold;
+	font-size: 25px;
+	margin-bottom: 15px;
+
+}
+
+.descriProd{
+	text-align: center;
+	font-size: 15px;
+	color: #560d0d;
+}
+
+.origen{
+	color: #d61d4e;
+}
+
+.nomP{
+	font-weight: bold;
+	color: #183661;
+}
+
+.ren{
+	background-color: #6b8c42;
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+.ren:hover{
+	opacity: 1;
+}
+
+.ren > .prod:hover{
+	background-color: #009975;
+}
+
+.artRef:hover{
+	color: #aeddcd;
+}
+
+p{
+	font-weight: bold;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Pie de página*/
+
+footer{
+	margin-top: 10px;
+	padding: 10px 10px 10px 10px;
+	background: #02576c;
+	text-align: center;
+	color: #6a0000;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 2px;
+	font-family: 'Nunito', sans-serif;
+    font-family: 'MedievalSharp', cursive;
+}
+
+#piePagina a{
+	color: #7d0000;
+}
+
+/*---------------------------------------------------------------*/
+
+
+/*Icono dinosaurio*/
+
+#icono{
+	position: absolute;
+	left: 650px;
+	top: 155px;
+}
