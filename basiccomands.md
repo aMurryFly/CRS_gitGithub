@@ -125,4 +125,70 @@ Ejemplo:
 
 En esta parte le estamos diciendo a git que los cambios que el propietario hizo los asocie a nuestra rama master local, posteriormete el Alias, en este caso Axel, puede ser cualquier cosa, ya sea nombre o apodo, y este nos servira más adelante para poder jalar los datos nuevos a nuestro copia local, es importante recordar este nickname para poder actualizar nuestro repositorio, y posteriormente se adjunta la liga, indicandole a git de donde esta ese repositorio original.
 
+* Config
 
+Configura la información del usuario para todos los repositorios locales. La herramienta config se puede utilizar de las siguientes formas:
+
+`$ git config --global user.name "[nombre]"`
+
+Establece el nombre que desea adjuntar a sus transacciones de confirmación (commit).
+
+`$ git config --global user.email "[dirección de correo electrónico]"`
+
+Establece el correo electrónico que desea adjuntar a sus transacciones de confirmación (commit).
+
+`$ git config --global color.ui auto`
+
+Habilita un coloreado útil para la salida de la línea de comandos. 
+
+* Init
+
+Inicia un nuevo repositorio mediante la línea de comandos. El uso de este comando es: 
+
+`$ git init [nombre-de-proyecto]`
+
+Esto crea un nuevo repositorio local con el nombre especificado
+
+* Diff
+
+Muestra cambios entre commits, entre commit y árbol de trabajo, etc. Funciona para diferentes opciones, desde cambios en dos archivos, árboles de trabajo hasta cambios resultantes de hacer merge. 
+
+`$ git diff`
+
+Muestra diferencias de archivos aún no preparadas (staged).
+
+Por ejemplo en el curso de git-github se mostró que diff funciona para mostrar las diferencias entre dos commits realizados, utilizando los identificadores de los commits para hacer referencia a cada uno de ellos. Por ejemplo:
+
+`$ git diff [identificador-del-commit]`
+
+Compara y muestra las diferencias entre el último commit realizado y el commit cuyo identificador se especifica.
+
+`$ git diff --staged`
+
+Muestra diferencias de archivos entre la versión "staging" y la última versión del archivo.
+
+`$ git diff [first-branch]...[second-branch]`
+
+Muestra las diferencias de contenido entre dos ramas.
+
+* Reset
+
+`$ git reset [file]`
+
+Des-efectua o demonta (unstage) el archivo, pero mantiene sus contenidos.
+
+`$ git reset [commit]`
+
+Deshace todos los commits después de [commit], manteniendo los cambios de forma local.
+
+`$ git reset --hard [commit]`
+
+Descarta todo el historial y vuelve a cambiar al commit que se especifica.
+
+* Fetch
+
+Cuando se utiliza git fetch, se agregan los cambios desde el repositorio remoto a la rama de trabajo local sin confirmarlos (committing). A diferencia de git pull, "fetching" permite revisar los cambios antes de confirmarlos (committing) hacia la rama local.
+
+`$ git fetch [bookmark]`
+
+Descarga todo el historial desde el repositorio especificado (desde el bookmark).
