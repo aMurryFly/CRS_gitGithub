@@ -1,13 +1,13 @@
-/*Proyecto final HTML, CSS & JS
+/* Proyecto final Git & Github 
+Nombre:
+Sam (Agrega tu nombre completo)
+Ruiz Villalba Valentina Fabienne
+Fecha de entrega: 26/08/20 */
 
-Nombre: Ruiz Villalba Valentina Fabienne
 
-Fecha de entrega: 22/06/19*/
-
-
-/*-------------------------------------------------
-				ESTILO DOCUMENTO 3 /  Formulario
--------------------------------------------------
+/*-----------------------------------------------------------------------
+		ESTILO DOCUMENTO 3 /  Información de la rama BasicGithub
+--------------------------------------------------------------------------
 */
 
 
@@ -39,14 +39,14 @@ body{
 
 .ref_doc{
 	text-decoration: none;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 /*transition*/
 
 .ref_doc{
-	padding: 5px 5px 5px 5px;
+	padding: 15px 15px 15px 15px;
 	opacity: 0.6;
 	transition: 0.3s;
 }
@@ -61,7 +61,7 @@ body{
 /*Título del artículo*/
 
 #header{
-	padding: 10px 15px 10px 15px;
+	padding: 10px 45px 10px 45px;
 }
 
 #header > .description{
@@ -116,7 +116,7 @@ body{
 
 /*Información principal*/
 
-#main_info{
+/*#main_info{
 	border-radius: 10px;
 	background-color: transparent;
 	width: auto;
@@ -124,8 +124,18 @@ body{
 	margin-left: 90px;
 	margin-right: 90px;
 	padding: 10px 25px 20px 25px;
-}
+}*/
 
+#main_info{
+	border-radius: 2px;
+	/*background-color: #d9d872;*/
+	background-color: #ebefd0; ¨/*Color beige*/
+	width: auto;
+	margin: auto;
+	margin-left: 90px;
+	margin-right: 90px;
+	padding: 10px 25px 20px 25px;
+}
 
 /*NOTA: Para esta parte consulte el video me menciono en el txt*/
 
