@@ -1,8 +1,8 @@
-/*Proyecto final HTML, CSS & JS
-
-Nombre: Ruiz Villalba Valentina Fabienne
-
-Fecha de entrega: 22/06/19*/
+/* Proyecto final Git & Github 
+Nombre:
+Sam (Agrega tu nombre completo)
+Ruiz Villalba Valentina Fabienne
+Fecha de entrega: 26/08/20 */
 
 
 /*-------------------------------------------------
@@ -39,14 +39,14 @@ body{
 
 .ref_doc{
 	text-decoration: none;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 /*transition*/
 
 .ref_doc{
-	padding: 5px 5px 5px 5px;
+	padding: 15px 15px 15px 15px;
 	opacity: 0.6;
 	transition: 0.3s;
 }
@@ -61,7 +61,7 @@ body{
 /*Título del artículo*/
 
 #header{
-	padding: 10px 15px 10px 15px;
+	padding: 10px 45px 10px 45px;
 }
 
 #header > .author{
@@ -96,6 +96,8 @@ body{
 	margin-right: 450px;
 	text-align: left;
 }
+
+
 
 /*---------------------------------------------------------------*/
 
