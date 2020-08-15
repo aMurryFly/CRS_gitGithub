@@ -1,4 +1,4 @@
-# Página web para el proyecto final del cusro de Git y Github
+# Página web para el proyecto final del curso de Git y Github
 ---
 El objetivo de esta página web es mostrar los comandos básicos para el manejo de Git y Github  de manera que sea de fácil para los integrantes del taller consultarlos en cualquier momento ✌️ .
 
@@ -15,7 +15,7 @@ El objetivo de esta página web es mostrar los comandos básicos para el manejo 
 
 * Editor de imagenes en [iLoveIMG](https://www.iloveimg.com/)
 * Paleta de colores en [Color Hunt](https://colorhunt.co/)
-
+* Iconos gratis en [Flaticon](https://www.flaticon.es/)
 
 
 
