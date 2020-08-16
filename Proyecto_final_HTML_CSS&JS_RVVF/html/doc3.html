@@ -4,7 +4,7 @@ Nombre:
 Sam (Agrega tu nombre completo)
 Ruiz Villalba Valentina Fabienne
 
-Fecha de entrega: 26/08/20  -->
+Fecha de entrega: 16/08/20  -->
 
 <!-- ------------------------------------------------------------
                 DOCUMENTO 3 (RAMA_BASIC_GITHUB)
@@ -14,144 +14,139 @@ Fecha de entrega: 26/08/20  -->
 
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=MedievalSharp|Nunito&display=swap" rel="stylesheet"> 
-	<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet"> <!--Agregar emoji-->
-	<link rel="stylesheet" type="text/css" href="../css/style_doc3.css">
-	<link rel="shorcut icon"  href="../imagenes/git.png">
-	<meta charset="utf-8">
-	<title>Comandos de github</title>
-	
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css?family=MedievalSharp|Nunito&display=swap" rel="stylesheet"> 
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet"> <!--Agregar emoji-->
+		<link rel="stylesheet" type="text/css" href="../css/style_doc3.css">
+		<link rel="shorcut icon"  href="../imagenes/git.png">
+		<meta charset="utf-8">
+		<title>Comandos de github</title>
+	</head>
+	<body>
 
-</head>
-<body>
+		<header>
+			<nav id = "navigation">
+				<div id="title_proy">
+				<h2>Proyecto final Git & Github</h2>
+				</div>
+				<a class ="ref_doc" href="../index.html"> Inicio</a>
+				<a class="ref_doc" href="doc2.html" target="_self">Basic Git</a> 
+				<a class= "ref_doc" href="#" target="_self">Basic Github</a> 
+			</nav>
+		</header> 
 
-<header>
-	<nav id = "navigation">
-		<div id="title_proy">
-		<h2>Proyecto final Git & Github</h2>
-		</div>
-		<a class ="ref_doc" href="../index.html"> Inicio</a>
-		<a class="ref_doc" href="doc2.html" target="_self">Basic Git</a> 
-		<a class= "ref_doc" href="#" target="_self">Basic Github</a> 
-	 </nav>
-</header> 
+		<div class="conteiner">
 
-<div class="conteiner">
+			<div id ="header">
 
-<div id ="header">
+				<div id = "icono">
+						<img src="../imagenes/github_2.png" alt="icon_github">
+				</div>
 
-	<div id = "icono">
-			<img src="../imagenes/github_2.png" alt="icon_github">
-	</div>
+				<h1 class="title"><span class="enchanted"><span class="colorDif">B</span>asic</span> <span class="enchanted"><span class="colorDif">G</span></span>ithub</h1>
+				<h4 class="description">Conoce los cómandos básicos que necesitas para empezar a usar git con github</h4>
+			</div>
 
-	<h1 class="title"><span class="enchanted"><span class="colorDif">B</span>asic</span> <span class="enchanted"><span class="colorDif">G</span></span>ithub</h1>
-	<h4 class="description">Conoce los cómandos básicos que necesitas para empezar a usar git con github</h4>
-</div>
+			<div id ="main_info">
 
-<div id ="main_info">
+				<h2 class="subtitle">Conceptos importantes antes del manejo de Github </h2>
 
-	<h2 class="subtitle">Conceptos importantes antes del manejo de Github </h2>
+				<p>
+					Antes de comenzar a revisar los comandos básicos de <strong>Github</strong> es importante tener presentes algunos conceptos básicos como el saber qué es un <strong>repositorio en línea o remoto</strong>, un <strong>repositorio local</strong> y un <strong>repositorio remoto</strong> . 
+					Es importante mencionar que al comenzar a utilizar github de forma colaborativa usualmente se nos pedirá que hagamos un <strong>fork</strong> al repositorio de un compañero o de la empresa en la que estemos trabajando y una vez hecha nuestra parte del trabajo 
+					se tendrá que relizar un <strong>pull request</strong> al compañero o la empresa, a continuación se explicarán todos estos términos con el fin de que la próxima vez que nos enfrentemos a esto sepamos que se debe hacer 
+					<i class="em em-sunglasses" aria-role="presentation" aria-label="SMILING FACE WITH SUNGLASSES"></i>.
+				</p>
 
-	<p>
-		Antes de comenzar a revisar los comandos básicos de <strong>Github</strong> es importante tener presentes algunos conceptos básicos como el saber qué es un <strong>repositorio en línea o remoto</strong>, un <strong>repositorio local</strong> y un <strong>repositorio remoto</strong> . 
-		Es importante mencionar que al comenzar a utilizar github de forma colaborativa usualmente se nos pedirá que hagamos un <strong>fork</strong> al repositorio de un compañero o de la empresa en la que estemos trabajando y una vez hecha nuestra parte del trabajo 
-		se tendrá que relizar un <strong>pull request</strong> al compañero o la empresa, a continuación se explicarán todos estos términos con el fin de que la próxima vez que nos enfrentemos a esto sepamos que se debe hacer 
-		<i class="em em-sunglasses" aria-role="presentation" aria-label="SMILING FACE WITH SUNGLASSES"></i>.
-	</p>
+				<dl>
+					<dt> <i class="em em-file_folder" aria-role="presentation" aria-label="FILE FOLDER"></i> Repositorio</dt>
+					<dd>
+						Es un espacio de almacenamiento en donde se guardan y acceden a archivos como por ejemplo algún proyecen el que se esté trabajando. 
+						<br>
+						Para más información de click <a  class = "wiki" href="https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/#:~:text=Repository%3A%20A%20directory%20or%20storage,name%20it%2C%20inside%20a%20repository." target="_blank"> aquí </a>
+					</dd>
 
-	<dl>
-		<dt> <i class="em em-file_folder" aria-role="presentation" aria-label="FILE FOLDER"></i> Repositorio</dt>
-		<dd>
-			Es un espacio de almacenamiento en donde se guardan y acceden a archivos como por ejemplo algún proyecen el que se esté trabajando. 
-			<br>
-			Para más información de click <a  class = "wiki" href="https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/#:~:text=Repository%3A%20A%20directory%20or%20storage,name%20it%2C%20inside%20a%20repository." target="_blank"> aquí </a>
-		</dd>
+					<br>
 
-		<br>
+					<dt> </i><i class="em em-cloud" aria-role="presentation" aria-label="CLOUD"></i> Repositorio en línea</dt>
+					<dd>
+						Repositorio que está guardado en el servidor de <em>github</em>.  
+						
+					</dd>
 
-		<dt> </i><i class="em em-cloud" aria-role="presentation" aria-label="CLOUD"></i> Repositorio en línea</dt>
-		<dd>
-			  Repositorio que está guardado en el servidor de <em>github</em>.  
-			
-		</dd>
+					<br>
 
-		<br>
+					<dt><i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> Repositorio local</dt>
+					<dd>
+						Se trata de una <i>copia</i> de algún repositorio en línea dentro de nuestro ordenador.
+					</dd>
 
-		<dt><i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> Repositorio local</dt>
-		<dd>
-			  Se trata de una <i>copia</i> de algún repositorio en línea dentro de nuestro ordenador.
-		</dd>
+					<br>
 
-		<br>
+					<dt> <i class="em em-satellite_antenna" aria-role="presentation" aria-label="SATELLITE ANTENNA"></i> Repositorio  o remoto</dt>
+					<dd>
+						Se trata del repositorio en línea de un tercero al cual hicimos un <em>fork</em>. 
+						<br>
+						Para más información de click <a  class = "wiki" href="https://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction" target="_blank"> aquí </a>
+					</dd>
 
-		<dt> <i class="em em-satellite_antenna" aria-role="presentation" aria-label="SATELLITE ANTENNA"></i> Repositorio  o remoto</dt>
-		<dd>
-			Se trata del repositorio en línea de un tercero al cual hicimos un <em>fork</em>. 
-			<br>
-			Para más información de click <a  class = "wiki" href="https://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction" target="_blank"> aquí </a>
-		</dd>
+					<br>
 
-		<br>
+					<dt><i class="em em-female-technologist" aria-role="presentation" aria-label=""></i> Fork</dt>
+					<dd>
+						Crear una copia del repositorio en línea de otro perfil en nuestro perfil de github. Desde este repositorio, podemos colaborar y sugerir cambios en el repositorio original.
+					</dd>
 
-		<dt><i class="em em-female-technologist" aria-role="presentation" aria-label=""></i> Fork</dt>
-		<dd>
-			Crear una copia del repositorio en línea de otro perfil en nuestro perfil de github. Desde este repositorio, podemos colaborar y sugerir cambios en el repositorio original.
-		</dd>
+					<br>
 
-		<br>
-
-		<dt><i class="em em-female-technologist" aria-role="presentation" aria-label=""></i> Pull request</dt>
-		<dd>
-			Se trata de una solicitud de incluir cambios en el repositorio de un tercero realizados en un repositorio en línea surgido a partir de realizarle un fork.
-		</dd>
-	</dl>
+					<dt><i class="em em-female-technologist" aria-role="presentation" aria-label=""></i> Pull request</dt>
+					<dd>
+						Se trata de una solicitud de incluir cambios en el repositorio de un tercero realizados en un repositorio en línea surgido a partir de realizarle un fork.
+					</dd>
+				</dl>
 
 
-	<h2 class="subtitle"> Proceso para actualizar nuestro repositorio remoto una vez hecho el Fork de algún otro compañero </h2>
-	<ul>
-		<li>Una vez que tenemos la "copia" en nuestro repositorio remoto, se debe primero clonar a nuestro repositorio local</li>
-		<p class="comand"> $git clone url</p>
-		<p> donde la url es de nuestro repositorio remoto. </p>
+				<h2 class="subtitle"> Proceso para actualizar nuestro repositorio remoto una vez hecho el Fork de algún otro compañero </h2>
+				<ul>
+					<li>Una vez que tenemos la "copia" en nuestro repositorio remoto, se debe primero clonar a nuestro repositorio local</li>
+					<p class="comand"> $git clone url</p>
+					<p> donde la url es de nuestro repositorio remoto. </p>
 
-		<li>Teniendo la copia, dentro de nuetro repositorio local nos movemos a la carpeta del repositorio</li>
-		
-		<li>Una vez ahí, actualizamos nuestro repositorio local desde el repositorio original pidiendo los cambios que se hayan hecho:</li>
-		<p class="comand"> $git remote add --track master NICKNAME url</p>
-		<p> donde el <em>NICKNAME</em> un identificador que le daremos al repositorio original y éste puede ser cualquier nombre, el <em >url</em> es del repositorio remoto original. </p>
+					<li>Teniendo la copia, dentro de nuetro repositorio local nos movemos a la carpeta del repositorio</li>
+					
+					<li>Una vez ahí, actualizamos nuestro repositorio local desde el repositorio original pidiendo los cambios que se hayan hecho:</li>
+					<p class="comand"> $git remote add --track master NICKNAME url</p>
+					<p> donde el <em>NICKNAME</em> un identificador que le daremos al repositorio original y éste puede ser cualquier nombre, el <em >url</em> es del repositorio remoto original. </p>
 
-		<p><i class="em em-warning" aria-role="presentation" aria-label="WARNING SIGN"></i> Ten en cuenta que este proceso es 
-			cuando nosotros <strong>no somos los propietarios</strong> del repositio original. En dado caso de que quisieramos <b>actulizar </b>nuestro repositorio siendo nosotros <b> 
-			los propietarios</b> el comando anterior es innecesario y simplemente tendríamos que escribir en la línea de comando los siguiente:
-			<p class="comand"> $git pull origin RAMA</p> </p>
+					<p><i class="em em-warning" aria-role="presentation" aria-label="WARNING SIGN"></i> Ten en cuenta que este proceso es 
+						cuando nosotros <strong>no somos los propietarios</strong> del repositio original. En dado caso de que quisieramos <b>actulizar </b>nuestro repositorio siendo nosotros <b> 
+						los propietarios</b> el comando anterior es innecesario y simplemente tendríamos que escribir en la línea de comando los siguiente:
+						<p class="comand"> $git pull origin RAMA</p> </p>
 
-		<li> Si modificamos alguno de los acrhivos dentro de nuestro repositorio local, debemos agregarlos y comentarlos</li>
-		<p class="comand"> $git add README.md <br> $git commit -m "Ejemplo"</p>
-		
+					<li> Si modificamos alguno de los acrhivos dentro de nuestro repositorio local, debemos agregarlos y comentarlos</li>
+					<p class="comand"> $git add README.md <br> $git commit -m "Ejemplo"</p>
+					
 
-		<li>De lo contrario, nos movemos a la rama que queremos actualizar y "bajamos" los cambios con el comando <i>pull</i></li>
-		<p class="comand"> $git pull NICKNAME rama</p>
-		<p> donde la url es de nuestro repositorio remoto. </p>
+					<li>De lo contrario, nos movemos a la rama que queremos actualizar y "bajamos" los cambios con el comando <i>pull</i></li>
+					<p class="comand"> $git pull NICKNAME rama</p>
+					<p> donde la url es de nuestro repositorio remoto. </p>
 
-		<li>Finalmente actualizamos la respectiva rama en nuestro repositorio remoto</li>
-		<p class="comand"> $git push origin RAMA</p>
-	
-	</ul>
+					<li>Finalmente actualizamos la respectiva rama en nuestro repositorio remoto</li>
+					<p class="comand"> $git push origin RAMA</p>
+				
+				</ul>
 
-</div> <!-- Fin de main_info -->
+			</div> <!-- Fin de main_info -->
 
-</div> <!-- fin de container -->
+		</div> <!-- fin de container -->
 
-<footer id="piePagina">
-		<p>&copy; 2020 <a href="http://dcb.fi-c.unam.mx/TallerRobotica/" target="_blank">  Taller de robótica abierta</a></p>
-	</footer>
+		<footer id="piePagina">
+			<p>&copy; 2020 <a href="http://dcb.fi-c.unam.mx/TallerRobotica/" target="_blank">  Taller de robótica abierta</a></p>
+		</footer>
 
-
-</body>
+	</body>
 </html>
 
 
-</body>
-</html>
