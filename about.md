@@ -1,6 +1,6 @@
 # Página web para el proyecto final del curso de Git y Github
 ---
-El objetivo de esta página web es mostrar los comandos básicos para el manejo de Git y Github  de manera que sea de fácil para los integrantes del taller consultarlos en cualquier momento ✌️ .
+El objetivo de esta página web es mostrar los comandos básicos para el manejo de Git y Github  de manera que sea fácil para los integrantes del taller consultarlos en cualquier momento ✌️ .
 
 ## **Fuentes Consultadas** 💻
 ##### **Páginas con información de interés**
