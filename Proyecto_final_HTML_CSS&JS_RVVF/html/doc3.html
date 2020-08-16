@@ -65,7 +65,7 @@ Fecha de entrega: 16/08/20  -->
 
 					<br>
 
-					<dt> </i><i class="em em-cloud" aria-role="presentation" aria-label="CLOUD"></i> <b>Repositorio en línea</b></dt>
+					<dt> <i class="em em-earth_americas" aria-role="presentation" aria-label="EARTH GLOBE AMERICAS"></i> <b>Repositorio en línea</b></dt>
 					<dd>
 						Repositorio que está guardado en el servidor de <em>github</em>.  
 						
@@ -103,32 +103,35 @@ Fecha de entrega: 16/08/20  -->
 				</dl>
 
 
-				<h2 class="subtitle"> Proceso para actualizar nuestro repositorio remoto una vez hecho el Fork de algún otro compañero </h2>
+				<h2 class="subtitle"> <i class="em em-satellite_antenna" aria-role="presentation" aria-label="SATELLITE ANTENNA"></i>
+					<i class="em em-heavy_minus_sign" aria-role="presentation" aria-label="HEAVY MINUS SIGN"></i>
+					<i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i>
+					Proceso para actualizar nuestro repositorio local desde un repositorio remoto </h2>
 				<ul>
-					<li>Una vez que tenemos la "copia" en nuestro repositorio remoto, se debe primero clonar a nuestro repositorio local</li>
-					<p class="comand"> $git clone url</p>
+					<li>Una vez que tenemos la "copia" en nuestro repositorio remoto, es decir se reliazó un Fork, se debe primero clonar a nuestro repositorio local</li>
+					<p class="comand"> $ git clone url</p>
 					<p> donde el <em>url</em> es de nuestro repositorio remoto. </p>
 
 					<li>Teniendo la copia, dentro de nuetro repositorio local nos movemos a la carpeta del repositorio.</li>
 					
 					<li>Una vez ahí, actualizamos nuestro repositorio local desde el repositorio original pidiendo los cambios que se hayan hecho:</li>
-					<p class="comand"> $git remote add --track master NICKNAME url</p>
+					<p class="comand"> $ git remote add --track master NICKNAME url</p>
 					<p> donde el <em>NICKNAME</em> un identificador que le daremos al repositorio original y éste puede ser cualquier nombre, el <em >url</em> es del repositorio remoto original. </p>
 
 					<p><i class="em em-warning" aria-role="presentation" aria-label="WARNING SIGN"></i> Ten en cuenta que este proceso es 
 						cuando nosotros <strong>no somos los propietarios</strong> del repositorio original. En dado caso de que quisieramos <b>actulizar nuestro repositorio local </b> siendo <b>propietarios</b> de un repositorio remoto
 						 el comando anterior es innecesario y simplemente tendríamos que escribir en la línea de comando:
-						<p class="comand"> $git pull origin RAMA</p> </p>
+						<p class="comand"> $ git pull origin RAMA</p> </p>
 
 					<li> Si modificamos alguno de los archivos dentro de nuestro repositorio local, debemos agregarlos y comentarlos</li>
-					<p class="comand"> $git add README.md <br> $git commit -m "Ejemplo"</p>
+					<p class="comand"> $ git add README.md <br> $ git commit -m "Ejemplo"</p>
 					
 
 					<li>De lo contrario, nos movemos a la rama que queremos actualizar y "bajamos" los cambios con el comando <i>pull</i></li>
-					<p class="comand"> $git pull NICKNAME rama</p>
+					<p class="comand"> $ git pull NICKNAME rama</p>
 
 					<li>Finalmente actualizamos la respectiva rama en nuestro repositorio remoto</li>
-					<p class="comand"> $git push origin RAMA</p>
+					<p class="comand"> $ git push origin RAMA</p>
 				
 				</ul>
 				<h2 class = "subtitle">Material adicional</h2>
