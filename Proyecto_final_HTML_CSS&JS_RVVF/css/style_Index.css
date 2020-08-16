@@ -154,9 +154,6 @@ body{
 	color: #831212;
 }
 
-#main_info > dl > dt{
-	color: #e37070;
-}
 
 .wiki:hover{ 
 	color: green; 
@@ -166,18 +163,15 @@ body{
 	color: green;
 }
 
-.images{
-	text-align: center;
+#ListaGitHub{
+	list-style-type: none;
 }
 
-figcaption{
-	color: #6a0000;
-	font-weight: bold;
+#name{
+	color: #5e0606;
 }
 
-img{
-	border-radius: 5px;
-}
+
 
 /*---------------------------------------------------------------*/
 

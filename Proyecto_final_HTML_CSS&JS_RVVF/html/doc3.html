@@ -4,49 +4,212 @@ Nombre:
 López Chong Samanta Lizbeth
 Ruiz Villalba Valentina Fabienne
 
-Fecha de entrega: 26/08/20  -->
+Fecha de entrega: 16/08/20  -->
 
 <!-- ------------------------------------------------------------
                 DOCUMENTO 3 (RAMA_BASIC_GITHUB)
 ------------------------------------------------------------ -->
 
 <!-- INFORMACIÓN DE LA RAMA BASIC_GITHUB-->
+
 <!DOCTYPE html>
 <html lang="es">
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
 		<link href="https://fonts.googleapis.com/css?family=MedievalSharp|Nunito&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+		<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet"> <!--Agregar emoji-->
 		<link rel="stylesheet" type="text/css" href="../css/style_doc3.css">
 		<link rel="shorcut icon"  href="../imagenes/git.png">
 		<meta charset="utf-8">
 		<title>Comandos de github</title>
 	</head>
 	<body>
+
 		<header>
 			<nav id = "navigation">
 				<div id="title_proy">
-					<h2>Proyecto final Git & Github</h2>
+				<h2>Proyecto final Git & GitHub</h2>
 				</div>
 				<a class ="ref_doc" href="../index.html"> Inicio</a>
 				<a class="ref_doc" href="doc2.html" target="_self">Basic Git</a> 
-				<a class= "ref_doc" href="#" target="_self">Basic Github</a> 
+				<a class= "ref_doc" href="#" target="_self">Basic GitHub</a> 
 			</nav>
 		</header> 
+
 		<div class="conteiner">
+
 			<div id ="header">
-				<div id = "icono">
-						<img src="../imagenes/dinosaur.png" alt="icon_dinosaur">
-				</div>
-				<h1 class="title"><span class="enchanted"><span class="colorDif">B</span>asic</span> <span class="enchanted"><span class="colorDif">G</span></span>ithub</h1>
+				<h1 class="title"><span class="enchanted"><span class="colorDif">B</span>asic</span> <span class="enchanted"><span class="colorDif">G</span></span>itHub</h1>
 				<h4 class="description">Conoce los cómandos básicos que necesitas para empezar a usar git con github</h4>
 			</div>
+
 			<div id ="main_info">
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eligendi vel quam recusandae debitis provident at possimus consequuntur iure ipsum perferendis dignissimos quod officiis, nam consectetur, voluptas maxime placeat dicta.</p>
+
+				<h2 class="subtitle">Conceptos importantes antes del manejo de Github </h2>
+
+				<p>
+					Antes de comenzar a revisar los comandos básicos de <strong>Github</strong> es importante tener presentes algunos conceptos básicos como lo son: <strong>repositorio en línea</strong>, <strong>repositorio local</strong> y un <strong>repositorio remoto</strong> . 
+					Al comenzar a utilizar github de forma colaborativa usualmente se nos pedirá hacer un <strong>fork</strong> al repositorio de un compañero y una vez hecha nuestra parte del trabajo 
+					se tendrá que relizar un <strong>pull request</strong> al compañero o a propietario del repositorio, todo esto se continuación se explicará con el fin de que la próxima vez que nos enfrentemos a esto sepamos que se debe hacer.
+				</p>
+
+				<dl>
+					<dt> <i class="em em-file_folder" aria-role="presentation" aria-label="FILE FOLDER"></i> <b>Repositorio</b></dt>
+					<dd>
+						Es un espacio de almacenamiento en donde se guardan y acceden a archivos como por ejemplo algún proyecen el que se esté trabajando. 
+						<br>
+						Para más información de click <a  class = "wiki" href="https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/#:~:text=Repository%3A%20A%20directory%20or%20storage,name%20it%2C%20inside%20a%20repository." target="_blank"> aquí </a>
+					</dd>
+
+					<br>
+
+					<dt> <i class="em em-earth_americas" aria-role="presentation" aria-label="EARTH GLOBE AMERICAS"></i> <b>Repositorio en línea</b></dt>
+					<dd>
+						Repositorio que está guardado en el servidor de <em>github</em>.  
+						
+					</dd>
+
+					<br>
+
+					<dt><i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i> <b>Repositorio local</b></dt>
+					<dd>
+						Se trata de una <i>copia</i> de algún repositorio en línea dentro de nuestro ordenador.
+					</dd>
+
+					<br>
+
+					<dt> <i class="em em-satellite_antenna" aria-role="presentation" aria-label="SATELLITE ANTENNA"></i> <b>Repositorio  o remoto</b></dt>
+					<dd>
+						Se trata del repositorio en línea de un tercero al cual hicimos un <em>fork</em>. 
+						<br>
+						Para más información de click <a  class = "wiki" href="https://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction" target="_blank"> aquí </a>
+					</dd>
+
+					<br>
+
+					<dt><i class="em em-bust_in_silhouette" aria-role="presentation" aria-label="BUST IN SILHOUETTE"></i> <b>Fork</b></dt>
+					<dd>
+						Crear una copia del repositorio en línea de otro perfil en nuestro perfil de github. Desde este repositorio, podemos colaborar y sugerir cambios en el repositorio original.
+					</dd>
+
+					<br>
+
+					<dt><i class="em em-busts_in_silhouette" aria-role="presentation" aria-label="BUSTS IN SILHOUETTE"></i> <b>Pull request</b></dt>
+					<dd>
+						Se trata de una solicitud de incluir cambios en el repositorio de un tercero realizados en un repositorio en línea surgido a partir de realizarle un fork.
+					</dd>
+				</dl>
+
+				<!--Proceso Fork-->
+				<h2 class="subtitle"> <i class="em em-arrows_counterclockwise" aria-role="presentation" aria-label="ANTICLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS"></i>
+					Proceso para actualizar un repositorio remoto al que se hizo Fork </h2>
+				<ul>
+					<li>Hacemos fork al repositorio remoto con el que estaremos trabajando</li>
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/fork_2.jpg" alt="Fork a un respositorio">
+						<figcaption>1.1 Fork a un repositorio</figcaption>
+					</figure>
+
+					<li>Una vez que tenemos la "copia" en nuestro repositorio remoto, se debe clonar a nuestro repositorio local</li>
+					<p class="comand"> $ git clone url</p>
+					<p> donde el <em>url</em> es de nuestro repositorio remoto. </p>
+
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/git_clone_1.png" alt="git clone en terminal">
+						<figcaption>1.2 Se <i>copia</i> el repositorio desde la terminal</figcaption>
+					</figure>
+
+					<li>Teniendo la copia, dentro de nuetro repositorio local nos movemos a la carpeta del repositorio.</li>
+					
+					<li> Si modificamos alguno de los archivos dentro de nuestro repositorio local, debemos agregarlos y comentarlos</li>
+					<p class="comand"> $ git add [name_file] </p> 
+
+					Después de agregarlo, guardamos o confirmamos los cambios con el siguiente comando:
+
+					<p class="comand"> $ git commit -m '[comment]'</p>
+
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/git_add_and_commit_1.png" alt="Uso de add y commit para guardar cambios">
+						<figcaption>1.3 Se aceptaron los cambios con add y se confirmaron con commit </figcaption>
+					</figure>
+
+					<li> Actualizamos la copia del repositorio local nuestro fork </li>
+
+					Utilizando el siguiente comando actualizamos la copia del repositorio original:
+
+					<p class="comand">$ git push </p>
+
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/git_push_1.png" alt="Uso comando push">
+						<figcaption>1.4 Se actualiza nuestro repositorio remoto (fork) con los cambios hechos en el repo local  </figcaption>
+					</figure>
+
+					<li> Generamos el Pull Request </li>
+
+					Por último, una vez actualizada nuestra copia (el fork) del repositorio remoto, generamos la solicitud para actualizar el repositorio remoto original
+
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/Pull_request_1.jpg" alt="Se hace un pull request al propietario">
+						<figcaption>1.4 Se realiza un pull request para que el propietario acepte los cambios</figcaption>
+					</figure>
+
+					<!--Proceso locar - remoto -->
+
+					<h2 class="subtitle"> <i class="em em-satellite_antenna" aria-role="presentation" aria-label="SATELLITE ANTENNA"></i>
+						<i class="em em-heavy_minus_sign" aria-role="presentation" aria-label="HEAVY MINUS SIGN"></i>
+						<i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i>
+						Proceso para actualizar nuestro repositorio local desde un repositorio remoto </h2>
+
+					<li> Primero, una vez dentro de nuestro repositorio local, nos movemos a la rama que queremos actualizar con los cambios hechos por el propietario del repositorio remoto </li>
+					Utilizando el siguiente comando nos movemos a la rama de interés
+
+					<p class="comand"> $ git checkout RAMA</p>
+					
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/git_checkout_1.png" alt="Camnbio de rama con checkout">
+						<figcaption>2.1 Nos cambiamos a la rama que deseamos actulizar</figcaption>
+					</figure>
+
+					<li> Actualizamos nuestro repositorio local desde el repositorio original pidiendo los cambios que se hayan hecho:</li>
+					<p class="comand"> $ git remote add --track master NICKNAME url</p>
+					<p> donde el <em>NICKNAME</em> un identificador que le daremos al repositorio original y éste puede ser cualquier nombre, el <em >url</em> es del repositorio remoto original. </p>
+
+					<p><i class="em em-warning" aria-role="presentation" aria-label="WARNING SIGN"></i> Ten en cuenta que este proceso es 
+						cuando nosotros <strong>no somos los propietarios</strong> del repositorio original. En dado caso de que quisieramos <b>actulizar nuestro repositorio local </b> siendo <b>propietarios</b> de un repositorio remoto
+						 el comando anterior es innecesario y simplemente tendríamos que escribir en la línea de comando:
+						<p class="comand"> $ git pull origin RAMA</p> </p>
+
+			
+					<li>Si nosostros no somos propietarios del repositorio original con el comando <i>pull</i>  comando "bajamos" los cambios </li>
+					<p class="comand"> $ git pull NICKNAME RAMA</p>
+
+					<li>Finalmente actualizamos la respectiva rama en nuestro repositorio remoto</li>
+					<p class="comand"> $ git push origin RAMA</p>
+				
+				</ul>
+				<h2 class = "subtitle">Material adicional</h2>
+
+				<ul>
+					<li><a  class = "wiki" href="https://docs.github.com/en" target="_blank"> Documentación GitHub </a></li>
+					<li><a  class = "wiki" href="https://git-scm.com/docs" target="_blank"> Documentación Git </a></li>
+				</ul>
+
+				
+				
 			</div> <!-- Fin de main_info -->
+
 		</div> <!-- fin de container -->
+
 		<footer id="piePagina">
-			<p>&copy; 2020 <a href="http://dcb.fi-c.unam.mx/TallerRobotica/" target="_blank">  Taller de robótica abierta</a></p>
+			<p>&copy; 2020 <a class="wiki" href="http://dcb.fi-c.unam.mx/TallerRobotica/" target="_blank">  Taller de Robótica Abierta</a></p>
 		</footer>
+
 	</body>
 </html>
+
+
+
+
+

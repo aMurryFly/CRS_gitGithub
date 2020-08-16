@@ -2,7 +2,7 @@
 Nombre:
 López Chong Samanta Lizbeth
 Ruiz Villalba Valentina Fabienne
-Fecha de entrega: 26/08/20 */
+Fecha de entrega: 16/08/20 */
 
 
 /*-----------------------------------------------------------------------
@@ -61,7 +61,7 @@ body{
 /*Título del artículo*/
 
 #header{
-	padding: 10px 45px 10px 45px;
+	padding: 10px 45px 10px 45px;	
 }
 
 #header > .description{
@@ -89,6 +89,7 @@ body{
     font-family: 'MedievalSharp', cursive;
 	font-size: 50px;
 	color: #681313;
+	/*margin-left: 50px;*/
 }
 
 #title_proy{
@@ -116,16 +117,6 @@ body{
 
 /*Información principal*/
 
-/*#main_info{
-	border-radius: 10px;
-	background-color: transparent;
-	width: auto;
-	margin: auto;
-	margin-left: 90px;
-	margin-right: 90px;
-	padding: 10px 25px 20px 25px;
-}*/
-
 #main_info{
 	border-radius: 2px;
 	/*background-color: #d9d872;*/
@@ -137,80 +128,58 @@ body{
 	padding: 10px 25px 20px 25px;
 }
 
-/*NOTA: Para esta parte consulte el video me menciono en el txt*/
-
-.box{
-	border-radius: 10px;
-	background-color: #ebefd0; ¨/*Color beige*/
-	width: 400px;
-	padding: 40px;
-	margin:auto;
-	margin-left: 300px;
-	margin-right: 300px;
-}
-
-
-.box >.inputBox{
-	position: relative;
-}
-
-.box >.inputBox > input{
-	width: 100%;
-	padding: 10px 0;
-	font-size: 16px;
-	color: green;
-	margin-bottom: 30px;
-	border: none;
-	border-bottom: 1px solid green;
-	outline: none;
-	background-color: transparent;
-}
-
-.box > .inputBox > label{
-	position: absolute;
-	top:0;
-	left: 0;
-	padding: 10px 0;
-	font-size: 16px;
-	color: green;
-	pointer-events: none;
-	transition: .5s;
-}
-
-.box > .radioButton > label{
-	font-size: 16px;
-	color: green;
-	margin-bottom: 5px;
-}
-
-
-.box > .list > label{
-	color: green;
-}
-
-
-.box > .inputBox > input:focus ~ label, .box > .inputBox > input:valid ~ label{
-	top:-20px;
-	left: 0;
-	color:  #9c2c2c;
-	font-size: 12px;
-}
-
-
-.box > .coment > p{
-	color: green;
-}
-
-
-
-.box > input[type="submit" ]{
-	background-color: transparent;
-	border: none;
-	font-weight: bold;
+#main_info > .subtitle{
 	color: #9c2c2c;
-	background: #40a798;
-	padding: 10px 20px;
-	cursor: pointer;
+}
+
+#main_info > p > strong{
+	color: #5e0606;
+}
+
+#main_info > p > b{
+	color: #5e0606;
+}
+
+
+#main_info > dl > dt{
+	color: #e43434;
+}
+
+.wiki:hover{ 
+	color: green; 
+}
+
+.artRef:hover{
+	color: green;
+}
+
+#main_info > ul > p > em{
+	color:  #ca2735;
+}
+
+#main_info > ul > p > strong{
+	color:  #5e0606;
+}
+
+#main_info > ul > p > b{
+	color:  #5e0606;
+}
+
+ul > .comand{
+	font-family: 'Roboto Mono', monospace;
+	text-shadow: 1px 1px rgba(44, 150, 91, 0.418);
+}
+
+.images{
+	text-align: center;
+}
+
+figcaption{
+	color: #ad2d17;
+	font-weight: bold;
+}
+
+img{
 	border-radius: 5px;
 }
 
@@ -238,10 +207,4 @@ footer{
 /*---------------------------------------------------------------*/
 
 
-/*Icono dinosaurio*/
 
-#icono{
-	position: absolute;
-	left: 650px;
-	top: 155px;
-}
