@@ -102,19 +102,77 @@ Fecha de entrega: 16/08/20  -->
 					</dd>
 				</dl>
 
-
-				<h2 class="subtitle"> <i class="em em-satellite_antenna" aria-role="presentation" aria-label="SATELLITE ANTENNA"></i>
-					<i class="em em-heavy_minus_sign" aria-role="presentation" aria-label="HEAVY MINUS SIGN"></i>
-					<i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i>
-					Proceso para actualizar nuestro repositorio local desde un repositorio remoto </h2>
+				<!--Proceso Fork-->
+				<h2 class="subtitle"> <i class="em em-arrows_counterclockwise" aria-role="presentation" aria-label="ANTICLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS"></i>
+					Proceso para actualizar un repositorio remoto al que se hizo Fork </h2>
 				<ul>
-					<li>Una vez que tenemos la "copia" en nuestro repositorio remoto, es decir se reliazó un Fork, se debe primero clonar a nuestro repositorio local</li>
+					<li>Hacemos fork al repositorio remoto con el que estaremos trabajando</li>
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/fork_2.jpg" alt="Fork a un respositorio">
+						<figcaption>1.1 Fork a un repositorio</figcaption>
+					</figure>
+
+					<li>Una vez que tenemos la "copia" en nuestro repositorio remoto, se debe clonar a nuestro repositorio local</li>
 					<p class="comand"> $ git clone url</p>
 					<p> donde el <em>url</em> es de nuestro repositorio remoto. </p>
 
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/git_clone_1.png" alt="git clone en terminal">
+						<figcaption>1.2 Se <i>copia</i> el repositorio desde la terminal</figcaption>
+					</figure>
+
 					<li>Teniendo la copia, dentro de nuetro repositorio local nos movemos a la carpeta del repositorio.</li>
 					
-					<li>Una vez ahí, actualizamos nuestro repositorio local desde el repositorio original pidiendo los cambios que se hayan hecho:</li>
+					<li> Si modificamos alguno de los archivos dentro de nuestro repositorio local, debemos agregarlos y comentarlos</li>
+					<p class="comand"> $ git add [name_file] </p> 
+
+					Después de agregarlo, guardamos o confirmamos los cambios con el siguiente comando:
+
+					<p class="comand"> $ git commit -m '[comment]'</p>
+
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/git_add_and_commit_1.png" alt="Uso de add y commit para guardar cambios">
+						<figcaption>1.3 Se aceptaron los cambios con add y se confirmaron con commit </figcaption>
+					</figure>
+
+					<li> Actualizamos la copia del repositorio local nuestro fork </li>
+
+					Utilizando el siguiente comando actualizamos la copia del repositorio original:
+
+					<p class="comand">$ git push </p>
+
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/git_push_1.png" alt="Uso comando push">
+						<figcaption>1.4 Se actualiza nuestro repositorio remoto (fork) con los cambios hechos en el repo local  </figcaption>
+					</figure>
+
+					<li> Generamos el Pull Request </li>
+
+					Por último, una vez actualizada nuestra copia (el fork) del repositorio remoto, generamos la solicitud para actualizar el repositorio remoto original
+
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/Pull_request_1.jpg" alt="Se hace un pull request al propietario">
+						<figcaption>1.4 Se realiza un pull request para que el propietario acepte los cambios</figcaption>
+					</figure>
+
+					<!--Proceso locar - remoto -->
+
+					<h2 class="subtitle"> <i class="em em-satellite_antenna" aria-role="presentation" aria-label="SATELLITE ANTENNA"></i>
+						<i class="em em-heavy_minus_sign" aria-role="presentation" aria-label="HEAVY MINUS SIGN"></i>
+						<i class="em em-computer" aria-role="presentation" aria-label="PERSONAL COMPUTER"></i>
+						Proceso para actualizar nuestro repositorio local desde un repositorio remoto </h2>
+
+					<li> Primero, una vez dentro de nuestro repositorio local, nos movemos a la rama que queremos actualizar con los cambios hechos por el propietario del repositorio remoto </li>
+					Utilizando el siguiente comando nos movemos a la rama de interés
+
+					<p class="comand"> $ git checkout RAMA</p>
+					
+					<figure class="images">
+						<img src="../imagenes/gitHub_Imagenes/git_checkout_1.png" alt="Camnbio de rama con checkout">
+						<figcaption>2.1 Nos cambiamos a la rama que deseamos actulizar</figcaption>
+					</figure>
+
+					<li> Actualizamos nuestro repositorio local desde el repositorio original pidiendo los cambios que se hayan hecho:</li>
 					<p class="comand"> $ git remote add --track master NICKNAME url</p>
 					<p> donde el <em>NICKNAME</em> un identificador que le daremos al repositorio original y éste puede ser cualquier nombre, el <em >url</em> es del repositorio remoto original. </p>
 
@@ -123,12 +181,9 @@ Fecha de entrega: 16/08/20  -->
 						 el comando anterior es innecesario y simplemente tendríamos que escribir en la línea de comando:
 						<p class="comand"> $ git pull origin RAMA</p> </p>
 
-					<li> Si modificamos alguno de los archivos dentro de nuestro repositorio local, debemos agregarlos y comentarlos</li>
-					<p class="comand"> $ git add README.md <br> $ git commit -m "Ejemplo"</p>
-					
-
-					<li>De lo contrario, nos movemos a la rama que queremos actualizar y "bajamos" los cambios con el comando <i>pull</i></li>
-					<p class="comand"> $ git pull NICKNAME rama</p>
+			
+					<li>Si nosostros no somos propietarios del repositorio original con el comando <i>pull</i>  comando "bajamos" los cambios </li>
+					<p class="comand"> $ git pull NICKNAME RAMA</p>
 
 					<li>Finalmente actualizamos la respectiva rama en nuestro repositorio remoto</li>
 					<p class="comand"> $ git push origin RAMA</p>
