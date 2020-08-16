@@ -121,10 +121,11 @@ body{
 
 /*Información principal*/
 
+
 #main_info{
 	border-radius: 2px;
 	/*background-color: #d9d872;*/
-	background-color: transparent;
+	background-color: #ebefd0; ¨/*Color beige*/
 	width: auto;
 	margin: auto;
 	margin-left: 90px;
@@ -132,58 +133,24 @@ body{
 	padding: 10px 25px 20px 25px;
 }
 
-
-table{
-	border: 3px solid #01676b;
-	font-family: 'Nunito', sans-serif;
-	text-align: center;
-	width: auto;
+#main_info > #title_2{
+	color:  #610f0f;
 }
 
-#titleTable{
-	color: #681313;
+#main_info > .subtitle{
+	color: #9c2c2c;
+}
+
+
+.comand{
+	font-family: 'Roboto Mono', monospace;
+	text-shadow: 1px 1px rgba(44, 150, 91, 0.418);
+}
+
+
+/*p{
 	font-weight: bold;
-	font-size: 25px;
-	margin-bottom: 15px;
-
-}
-
-.descriProd{
-	text-align: center;
-	font-size: 15px;
-	color: #560d0d;
-}
-
-.origen{
-	color: #d61d4e;
-}
-
-.nomP{
-	font-weight: bold;
-	color: #183661;
-}
-
-.ren{
-	background-color: #6b8c42;
-	opacity: 0.6;
-	transition: 0.3s;
-}
-
-.ren:hover{
-	opacity: 1;
-}
-
-.ren > .prod:hover{
-	background-color: #009975;
-}
-
-.artRef:hover{
-	color: #aeddcd;
-}
-
-p{
-	font-weight: bold;
-}
+}*/
 
 /*---------------------------------------------------------------*/
 

@@ -17,6 +17,8 @@ Fecha de entrega: 16/08/20  -->
 	<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=MedievalSharp|Nunito&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet"> <!--Agregar emoji-->
 	<link rel="stylesheet" type="text/css" href="../css/style_doc2.css">
 	<link rel="shorcut icon" href="../imagenes/git.png">
 	<meta charset="utf-8">
@@ -38,58 +40,93 @@ Fecha de entrega: 16/08/20  -->
 		<div id="header">
 			<h1 class="title"><span class="enchanted"><span class="colorDif">B</span>asic</span> <span
 					class="enchanted"><span class="colorDif">G</span></span>it</h1>
+			<h4 class="description">Conoce los cómandos básicos que necesitas para empezar a usar git</h4>
 		</div>
 		<div id="main_info">
-			<h1>Lista de comandos usados en Git</h1>
+			<h1 id="title_2">Lista de comandos usados en Git</h1>
 
-			<h2>Nuevo repositorio </h2>
+			<h2 class="subtitle"> <i class="em em-file_folder" aria-role="presentation" aria-label="FILE FOLDER"></i>Nuevo repositorio </h2>
 
-			Para crear un nuevo repositorio, el comando utilizado es <b> git init. </b>
+			Inicia un nuevo repositorio mediante la línea de comandos. El uso de este comando es:
+			
+			<p class="comand">$ git init [nombre_de_proyecto] </p>
+			
 
-			<h2>Add & commit</h2>
+			<h2 class="subtitle">Add & commit</h2>
 
-			Para registrar cambios primero se debe utilizar el comando git add archivo_que_se_desea_guardar y después
-			hacer un commit para confirmar los cambios
-			con el siguiente comando <b> git commit --m 'mensaje que indique lo que se esta modificando'</b>
+			Para registrar cambios primero se debe utilizar el comando
+			<ul>
+				<li><p class="comand">$ git add archivo_que_se_desea_guardar</p></li>
+			</ul>
+			después se hace un commit para confirmar los cambios
+			escribiendo en la línea de comandos: 
+			<ul>
+				<li><p class="comand">$ git commit --m 'mensaje que indique lo que se esta modificando'</p></li>
+			</ul>
+			
+			<h2 class="subtitle">Checkout</h2>
+			Comando utilizado para cambiar de rama
 
+			<p class="comand">$ git checkout [nombre_de_la_rama]</p>
 
+			<h2 class="subtitle">Push</h2>
+			Actualiza cambios desde el repositorio local al mismo repositorio remoto.
+			<p class="comand">$ git push</p>
 
-			<h2>Status</h2>
+			<h2 class="subtitle">Branch</h2>
+			Comando utilizado para listar, crear o eliminar ramas
+			<p class="comand">$ git branch</p>
+
+			<h2 class="subtitle">Status</h2>
 
 			Este comando nos permite ver el estado actual de nuestro repositorio, en este caso si este se encuentra
 			actualizado con el repositorio remoto y nos indica si hay algun cambio.
 
-			El comando que se utiliza es <b>git status.</b>
+			El comando que se utiliza es <p class="comand">$ git status</p> 
 
 
-			<h2>Help</h2>
+			<h2 class="subtitle">Help</h2>
 
-			Este comando nos permite listar, valga la redundancia, los comandos más usados en git, esto con el proposito
-			de tener una herramienta por si no recordamos el comando especifico a utilizar. Tambien tiene uan pequeña
+			Este comando permite listar los comandos más usados en git, esto con el proposito
+			de tener una herramienta por si no recordamos el comando especifico a utilizar <i class="em em-thinking_face" aria-role="presentation" aria-label="THINKING FACE"></i>. Tambien tiene uan pequeña
 			descripción de para que sirve cada comando.
 
-			El comando que se utiliza es <b> git help. </b>
+			<ul>
+				<li><p class="comand">$ git help</p></li>
+			</ul>
+			 Otra forma es pedir informacion especifica de uno de los comandos con la siguiente instrucción:
+
+			 <ul>
+				<li><p class="comand">$ git help [comando]</p>
+			</ul>
+			 
 
 
-			<h2>Rm</h2>
+			<h2 class="subtitle">Rm</h2>
 
 			El comando rm nos permite eliminar archivos dentro de nuestro repositorio, cabe señalar que al ser un
 			comando de git, esto evita tener posibles errores si se eliminan con los comandos de linux usuales.
 
-			El comando usado es <b>git rm nombre_del_archivo_a_eliminar</b>
+			El comando usado es:
 
-			<h2>Mv</h2>
+			<p class="comand"> $ git rm nombre_del_archivo_a_eliminar</p>
+			
+
+			<h2 class="subtitle">Mv</h2>
 
 			Este comando es usado para mover o renombrar un archivo o un directorio específico, se utilizan dos
 			formas:
 
 			Move or rename a file o directory.
 
-			Los comandos son los siguientes: <br>
+			Los comandos son los siguientes: 
 
-			<b>git mv "source" "destination"<br>
-				git mv "source" ... "destination directory"</b>
-
+			<ul>
+				<li><p class="comand"> $ git mv "source" "destination"</p></li>
+				<li><p class="comand">$git mv "source" ... "destination directory" </p></li>
+			</ul>
+		
+		
 			<!--In the first form, it renames "source", which must exist and be either
 			a file, symlink or directory, to "destination". In the second form, the
 			last argument has to be an existing directory; the given sources will
@@ -98,45 +135,124 @@ Fecha de entrega: 16/08/20  -->
 			The index is updated after successful completion, but the change must
 			still be committed.-->
 
-			<h2>Log</h2>
+			<h2 class="subtitle">Log</h2>
 
 			El comando log nos permite ver los identificadores de los cambios hechos, esto, ya que es necesario cuando
 			deseamos observar por terminal el cambio que existe en la version actual del repositorio, con una version
 			especifica, dada por este identificador.
 
-			El comando usado es <b>git log. </b>
+			<p class="comand"> $ git log</p>
 
-			<h2>Show</h2>
+			<h2 class="subtitle">Show</h2>
 
 			Git show nos permite ver la información del repositorio y ademas los cambios que hay en los dos ultimos
 			commits.
 
-			El comando usado es <b>git rm nombre_del_archivo</b>
+			<p class="comand"> $ git rm "nombre_del_archivo"</p>
+	
 
-			<h2>Merge</h2>
+			<h2 class="subtitle">Merge</h2>
 
 			Este comando nos permite fusionar los cambios hechos en una rama especifica (nombre_de_la_rama) con otra
 			rama existente, por ejemplo la rama master, para que esto sea posible debemos estar en la rama a la cual
 			queremos hacerle los cambios. A continuación se muestra el comando que tendria que usarse.
+			
+			<p class="comand"> $ git merge nombre_de_la_rama</p>
+			
+			
 
-			El comando usado es <b>git merge nombre_de_la_rama.</b>
-
-			<h2>Remote</h2>
+			<h2 class="subtitle">Remote</h2>
 
 			El comando remote nos permite actualizar un repositorio que no es de nuestra propiedad, y el cual hemos
-			hecho un fork y posteriormente clonado de manera local. La manera de hacer esto es con el comando siguiente: ><br>
+			hecho un fork y posteriormente clonado de manera local. La manera de hacer esto es con el comando siguiente:
 
-			<b>
-				git remote add --track rama_a_la_que_deseo_asociar_los_cambios
-				Alias_que_queremos_asociar_el_repositorio_original
-				link_con_el_que_clonamos_repositorios_en_este_caso_el_del_propietario<br>
+			<p class="comand">$ git remote add --track rama_asociar_cambios Alias link_del_propietario </p>
+		
+			<p class="comand">$ git pull alias_repositorio_orig rama_asociar_los_cambios</p>
 
-				git pull nombre Alias_que_queremos_asociar_el_repositorio_original
-				rama_a_la_que_deseo_asociar_los_cambios
+			Para entenderlo mejor pondremos un ejemplo concreto, supongamos que nos interesa hacer un fork de un repositorio especifico, posteriormente al tenerlo en nuestro repositorio y 
+			hacer una copia de manera local al creador o propietario del repositorio se le ocurre subir algunos cambios, al nosotros estar interesados en tener esos cambios debemos decirle a git que se trata de un repositorio remoto, y no de un repositorio propio.
+
+			<p class="comand">$ git remote add --track master Axel https://github.com/AxelRojas/ejercicioJueves.git</p>
+
+			En esta parte le estamos diciendo a git que los cambios que el propietario hizo los asocie a nuestra rama master local, posteriormete el Alias, en este caso Axel, puede ser cualquier cosa, ya sea nombre o apodo, 
+			y este nos servira más adelante para poder jalar los datos nuevos a nuestro copia local, es importante recordar este nickname para poder actualizar nuestro repositorio, y posteriormente se adjunta la liga,
+			 indicandole a git de donde esta ese repositorio original.
+
+			 <h2 class="subtitle">Config</h2>
+
+			 Configura la información del usuario para todos los repositorios locales. La herramienta config se puede utilizar de las siguientes formas:
+			<ul>
+				<li><p class="comand">$ git config --global user_name "[nombre]"</p>
+
+					Establece el nombre que desea adjuntar a sus transacciones de confirmación (commit).
+				</li>
+
+				<li><p class="comand">$ git config --global user_email "[dirección de correo electrónico]"</p>
+					Establece el correo electrónico que desea adjuntar a sus transacciones de confirmación (commit).
+				</li>
+
+				<li><p class="comand">$ git config --global color_ui auto</p>
+					Habilita un coloreado útil para la salida de la línea de comandos.
+				</li>
+
+			</ul>
+			
+
+			<h2 class="subtitle">Diff</h2>
+
+			Muestra cambios entre commits, entre commit y árbol de trabajo, etc. Funciona para diferentes opciones, desde cambios en dos archivos, árboles de trabajo hasta cambios resultantes de hacer merge.
+			
+			<ul>
+				<li><p class="comand">$ git diff</p>
+					Muestra diferencias de archivos aún no preparadas (staged).
+				</li>
+			</ul>
+
+			Por ejemplo en el curso de git-github se mostró que diff funciona para mostrar las diferencias entre dos commits realizados, 
+			utilizando los identificadores de los commits para hacer referencia a cada uno de ellos. Por ejemplo:
+
+			<ul>
+				<li><p class="comand">$ git diff [identificador-del-commit]</p>
+					Compara y muestra las diferencias entre el último commit realizado y el commit cuyo identificador se especifica
+				</li>
+
+				<li><p class="comand">$ git diff --staged</p>
+					Muestra diferencias de archivos entre la versión "staging" y la última versión del archivo.
+				</li>
+
+				<li><p class="comand">$ git diff [first-branch]...[second-branch] </p>
+					Muestra las diferencias de contenido entre dos ramas.
+				</li>
+			</ul>
+			
+			<h2 class="subtitle">Reset</h2>
+
+			<ul>
+				<li><p class="comand">$ git reset [file]</p>
+					Desafecta o desarma (unstage) el archivo, pero mantiene sus contenidos.
+				</li>
+
+				<li><p class="comand">$ git reset [commit]</p>
+					Deshace todos los commits después de [commit], manteniendo los cambios de forma local.
+				</li>
+
+				<li><p class="comand">$ git reset --hard [commit]</p>
+					Descarta todo el historial y vuelve a cambiar al commit que se especifica.
+				</li>
+			</ul>
 
 
+			<h2 class="subtitle">Fetch</h2>
 
-			</b>
+			Cuando se utiliza git fetch, se agregan los cambios desde el repositorio remoto a la rama de trabajo local sin confirmarlos (committing).
+			A diferencia de git pull, "fetching" permite revisar los cambios antes de confirmarlos (committing) hacia la rama local.
+
+			<p class="comand">$ git fetch [bookmark]</p>
+
+			Descarga todo el historial desde el repositorio especificado (desde el bookmark).
+
+
 
 		</div> <!-- Fin de main_info -->
 	</div> <!-- fin de container -->
