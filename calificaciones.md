@@ -18,7 +18,9 @@
 
 NOTA:
     
-    Estos datos los pueden checar en los datos del repo [click here](https://github.com/aMurryFly/CRS_gitGithub/pulse)
+    Estos datos los pueden checar en los datos del repo 
+
+[click here](https://github.com/aMurryFly/CRS_gitGithub/pulse)
 
 | Nombre  | Comentario | Calificacion  | 
 |---------|---|---|
