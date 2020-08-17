@@ -28,7 +28,7 @@ Debido a que los equipos desarrollarán actividades distintas, se plantea como f
 
 El objetivo final de este proyecto es que se construya una página web sencilla que mencione los aspecto básicos e importantes del manejo de Git y Github
 
-El deploy de la página web se realizará en el siguiente link [click here :D](https://murrfly.netlify.app/)
+El deploy de la página web se realizará en el siguiente link [click here :D](https://amurryfly.github.io/CRS_gitGithub/)
 
 ## 🤔 Dudas o comentarios
 
@@ -37,3 +37,5 @@ Hay herramientas dentro de Github que sirven precisamente para esto, sin embargo
 
 
 P.D: Si quieres conocer un proyecto interesante que estoy realizando a lo largo de la carrera [dale click aquí](https://murrfly.netlify.app/)
+
+
